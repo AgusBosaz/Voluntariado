@@ -1,21 +1,23 @@
-using system;
-class Voluntarios : Participantes
+using System;
+public class Voluntarios : Participantes
 {
-private int horasTrabajadas;
+    private int horasTrabajadas;
 
-public Coordinadores(string nombre, int dni, int horasTrabajadas) : base(nombre, dni)
-{
-horasTrabajadas = horasTrabajadas;
-}
-public int HorasTrabajadas
-{
-get { return this.horasTrabajadas; }
-set { this.horasTrabajadas = value; }
-}
-public override void MostrarInformacion()
-{
-base.MostrarInformacion();
-Console.Writeline("Horas trabajadas: " + horasTrabajadas);
-}
+    public Voluntarios(string nombre, int dni, int horasTrabajadas) : base(nombre, dni)
+    {
+        this.horasTrabajadas = horasTrabajadas;
+    }
+    public int HorasTrabajadas
+    {
+        get { return this.horasTrabajadas; }
+        set { this.horasTrabajadas = value; }
+    }
+    public override void MostrarInformacion()
+    {
+        System.Console.WriteLine("-------------------------------");
+        base.MostrarInformacion();
+        Console.WriteLine("Horas trabajadas: " + horasTrabajadas);
+        System.Console.WriteLine("-------------------------------");
+    }
 
 }
