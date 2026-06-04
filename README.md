@@ -15,7 +15,9 @@ Clase base que contiene los datos comunes de todos los participantes:
 - DNI
 
 ### Voluntario
-Clase que hereda de Participantes y representa a los voluntarios del sistema.
+Clase que hereda de Participantes y representa a los voluntarios del sistema:
+
+- Horas trabajadas
 
 ### Coordinador
 Clase que hereda de Participantes y agrega información específica:
@@ -41,7 +43,6 @@ Clase que hereda de Participantes y agrega información específica:
 ## Tecnologías utilizadas
 
 - C#
-- .NET
 - Aplicación de Consola
 
 ## Autor
